@@ -59,6 +59,7 @@ public class Computer {
 	}
 	
 	public void displayReceipt() {
+		
 		String display = "***************Receipt***************\n" + towerCase +
 						"\n" + monitor + "\n" + cpu + "\n" +
 						videoCard + "\n" + hardDrive + "\n" + 

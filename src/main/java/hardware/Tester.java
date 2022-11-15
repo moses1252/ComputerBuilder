@@ -1,9 +1,13 @@
 package hardware;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.Scanner;
 
 public class Tester {
 
 	public static void main(String[] args) {
+
 		Case case1 = new Case("Antec Twelve Hundred V3", 22.87, 8.39, 
 				20.20, "ATX Full Tower", 154.99); 
 		Case case2 = new Case("BitPhenix Phenom M Arctic White",9.80, 

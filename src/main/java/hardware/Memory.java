@@ -6,6 +6,7 @@ public class Memory {
 	private double price;
 
 	public Memory() {
+		
 	}
 
 	public Memory(String name, int size, double price) {
