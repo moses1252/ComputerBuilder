@@ -1,0 +1,55 @@
+CREATE TABLE computer_case (
+case_id INT NOT NULL AUTO_INCREMENT,
+case_name VARCHAR(80) NOT NULL,
+height FLOAT NOT NULL,
+width FLOAT NOT NULL,
+length FLOAT NOT NULL,
+case_type VARCHAR(80) NOT NULL,
+price FLOAT NOT NULL,
+PRIMARY KEY (case_id)
+);
+
+INSERT INTO computer_case values
+(1, 'Antec Twelve Hundred V3', 22.87, 8.39, 20.20, 'ATX Full Tower', 154.99),
+(2, 'BitPhenix Phenom M Arctic White', 9.80, 12.95, 14.69, 'MicroATX Mini Tower', 89.99);
+
+
+CREATE TABLE cpu (
+cpu_id INT NOT NULL AUTO_INCREMENT,
+cpu_name VARCHAR(80) NOT NULL,
+speed FLOAT NOT NULL,
+price FLOAT NOT NULL,
+PRIMARY KEY (cpu_id)
+);
+
+CREATE TABLE hard_drive (
+hard_drive_id INT NOT NULL AUTO_INCREMENT,
+hard_drive_name VARCHAR(80) NOT NULL,
+size INT NOT NULL,
+price FLOAT NOT NULL,
+PRIMARY KEY (hard_drive_id)
+);
+
+CREATE TABLE memory (
+memory_id INT NOT NULL AUTO_INCREMENT,
+memory_name VARCHAR(80) NOT NULL,
+size INT NOT NULL,
+price FLOAT NOT NULL,
+PRIMARY KEY (memory_id)
+);
+
+CREATE TABLE monitor (
+monitor_id INT NOT NULL AUTO_INCREMENT,
+monitor_name VARCHAR(80) NOT NULL,
+size FLOAT NOT NULL,
+price FLOAT NOT NULL,
+PRIMARY KEY (monitor_id)
+);
+
+CREATE TABLE video_card (
+video_card_id INT NOT NULL AUTO_INCREMENT,
+video_card_name VARCHAR(80) NOT NULL,
+memory_size INT NOT NULL,
+price FLOAT NOT NULL,
+PRIMARY KEY (video_card_id)
+);
